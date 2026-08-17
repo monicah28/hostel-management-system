@@ -6,9 +6,9 @@ A web app for managing hostel operations, built as a resume/portfolio project.
 
 | Layer     | Technology                          | Why |
 |-----------|--------------------------------------|-----|
-| Frontend  | React (Vite) + plain CSS             | You already know these |
-| Backend   | Node.js + Express                    | Same language as React (JavaScript) — no context-switch to learn a new syntax |
-| Database  | MongoDB (via Mongoose)               | Stores data as JSON-like documents, which maps naturally onto JS objects/React state |
+| Frontend  | React (Vite) + plain CSS             | Fast dev experience and a component-based UI without extra tooling overhead |
+| Backend   | Node.js + Express                    | Lightweight, widely-used framework for building REST APIs |
+| Database  | MongoDB (via Mongoose)               | Flexible schema that maps naturally onto JS objects, good fit for evolving app data |
 
 This combination is called the **MERN stack** (MongoDB, Express, React, Node).
 
