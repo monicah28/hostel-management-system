@@ -10,7 +10,7 @@ function ComplaintForm({ onAdd }) {
   // to read; for bigger forms you'd combine into one object.
   const [studentName, setStudentName] = useState("");
   const [roomNumber, setRoomNumber] = useState("");
-  const [category, setCategory] = useState("Other");
+  const [category, setCategory] = useState("");
   const [description, setDescription] = useState("");
 
   const handleSubmit = (e) => {
@@ -22,7 +22,7 @@ function ComplaintForm({ onAdd }) {
     // reset the form after submitting
     setStudentName("");
     setRoomNumber("");
-    setCategory("Other");
+    setCategory("Issue");
     setDescription("");
   };
 
@@ -45,6 +45,7 @@ function ComplaintForm({ onAdd }) {
       />
 
       <select value={category} onChange={(e) => setCategory(e.target.value)}>
+        <option value="" disabled hidden>Select an issue</option>
         <option>Electrical</option>
         <option>Plumbing</option>
         <option>Cleanliness</option>
